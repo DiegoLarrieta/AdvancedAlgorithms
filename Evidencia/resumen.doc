@@ -1,0 +1,26 @@
+En resumen el objetivo del coigo era analizar diferenets archivos de transmiciones, donde teniamos que buscar coincidencias con patrones maliciosos.
+Se implementaron varios algoritmos que vimos en clase para buscar patrones, subsecuencias , palindromos y substrings comunes mas largos entre los textos de transmisiones.
+
+Funciones Implementadas
+Algoritmo KMP (Knuth-Morris-Pratt) para búsqueda de patrones:
+
+El código incluye el algoritmo KMP para buscar patrones en un texto. Este algoritmo permite encontrar de manera eficiente todas las posiciones donde un patrón específico aparece dentro de un archivo de transmisión.
+Funcionamiento: Utiliza un array de prefijos (LPS) para evitar comparar múltiples veces las mismas partes del texto, lo que mejora la eficiencia en comparación con una búsqueda directa.
+Algoritmo de subsecuencias modificadas:
+
+Genera subsecuencias del patrón original eliminando dos caracteres a la vez. Esto permite buscar patrones ligeramente diferentes al original en las transmisiones.
+Funcionamiento: Para cada subsecuencia generada, se utiliza KMP para contar cuántas veces aparece en cada transmisión.
+Algoritmo de Manacher para encontrar el palíndromo más largo:
+
+Esta parte del código busca el palíndromo más largo en cada transmisión, es decir, una subsecuencia dentro del texto que se lea igual de izquierda a derecha y viceversa.
+Funcionamiento: El algoritmo de Manacher es eficiente y convierte el texto para facilitar la búsqueda de palíndromos.
+Algoritmo para el Longest Common Substring (LCS):
+
+Este algoritmo encuentra la secuencia común más larga entre dos textos. Aquí se implementa para comparar transmisiones de pares de archivos y encontrar la cadena compartida más larga.
+Funcionamiento: Utiliza una tabla de programación dinámica para calcular el LCS entre dos palabras y retornar la cadena más larga en común.
+Contador de coincidencias de subsecuencias:
+
+Se cuenta cuántas veces cada subsecuencia aparece en las transmisiones utilizando nuevamente el algoritmo KMP, lo que permite identificar las subsecuencias más frecuentes en cada archivo 
+
+Como reflexion de esta actividad es que me ayudo a mejorar mi logica y poder entender mas como es que funcionan estos algoritmos y como es que combinados es que pueden realizar diferntes cosas muy utiles.
+Pude entenderlos mejor y el implementarlos me ayudo a que se reforzara mas el conocimiento de estos algoritmos. 
